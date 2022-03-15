@@ -11,4 +11,32 @@
         width: 45%;
 
     }
+    &__left {
+        .logLink {
+            border: 2px lightgreen solid; 
+            margin: 0.4rem 0 0.4rem 0;
+            height: 22%;
+            width: 75%;
+            font-size: 0.9rem;
+            position: relative;
+            box-shadow: 1px 1px 2px gray;
+            border-radius: 3px;
+            @include flex-center-dir(start,center,row);
+        }
+        .facebook {
+            background-color: #507bbf;
+        }
+        .google {
+            background-color: #db4a30;
+        }
+        .twitter {
+            background-color: #65cdf2;  
+        }
+    }
+    &__middle  {
+        border: 0.1px rgb(212, 212, 212) solid;
+        width: 0;
+        height: 80%;
+        margin: auto 0;
+    }
 }
