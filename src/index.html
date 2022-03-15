@@ -4,10 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/vendor/fontawesome/all.css">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="outContainer">
+        <div class="boxTop">
+            <div class="boxTop__left">
+                <!-- social media section -->
+                <div class="facebook logLink">
+                   
+                    <i class="fab fa-facebook-f"></i> 
+                    <a href="#"> 
+                        <span>
+                            &nbsp;Facebook login
+                        </span>
+                    </a>
+                    <div class="pipe"></div>
+                </div>
+                <div class="google logLink">
+                    <i class="fab fa-google"></i>
+                    <a href="#">
+                        <span>
+                            &nbsp;Google login
+                        </span>
+                    </a>
+                    <div class="pipe"></div>
+                </div>
+                <div class="twitter logLink">
+                    <i class="fab fa-twitter"></i>
+                    <a href="#">
+                        <span>
+                            &nbsp;Twitter login
+                        </span>
+                    </a>
+                    <div class="pipe"></div>
+                </div>
+            </div>
+            <div class="boxTop__right">
+                <div id="headline">
+                    <h4>Sign in with</h4>
+                </div>
+                <form action="index.js" method="GET">
+                    <div>
+                        <i class="far fa-user"></i><input type="text" name="text" id="1" placeholder="Username or email" required>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-lock"></i><input type="password" name="password" id="2" placeholder="Password">
+                    </div>
+
+                    <div>
+                        <label class="checkLabel">
+                            <input type="checkbox" name="agree" id="3">
+                            <span></span> 
+                        </label>
+                        &nbsp;Remember me
+                        <input type="submit" value="LOGIN" id="4">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="boxBottom">
+            <!-- reFo register now & Forgotten? inside the boxBottom -->
+            <span class="reFo">
+                <a href="#">Register now</a>
+            </span> 
+            <div id="midBottom"></div> 
+            <span class="reFo">
+                <a href="#">Forgotten?</a>
+            </span>
+        </div>
+    </div>
 </body>
 </html>

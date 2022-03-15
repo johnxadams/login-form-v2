@@ -1,0 +1,14 @@
+.boxTop {
+    border: 1px black solid;
+    background-color: white;
+    height: 83%;
+    width: auto;
+    @include flex-center-dir(space-between,start,row);
+    &__left,
+    &__right {
+        border: 1px red dashed;
+        height: 100%;
+        width: 45%;
+
+    }
+}

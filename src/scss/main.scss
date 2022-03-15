@@ -7,4 +7,19 @@
 
 body {
     background-color: burlywood;
+    width: 100vw;
+    height: 100vh;
+    // @include flex-center-wrap(center,center,nowrap);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.outContainer {
+    border: 2px black solid;
+    background-color: aliceblue;
+    width: 40%;
+    height: 40%;
+    padding: 0.3rem 0.3rem 0 0.3rem;
 }
