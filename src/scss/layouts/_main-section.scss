@@ -9,11 +9,12 @@
         border: 1px red dashed;
         height: 100%;
         width: 45%;
+        @include flex-center-dir(center,center,column);
 
     }
     &__left {
         .logLink {
-            border: 2px lightgreen solid; 
+            // border: 2px lightgreen solid; 
             margin: 0.4rem 0 0.4rem 0;
             height: 22%;
             width: 75%;
@@ -21,7 +22,21 @@
             position: relative;
             box-shadow: 1px 1px 2px gray;
             border-radius: 3px;
-            @include flex-center-dir(start,center,row);
+            @include flex-center-dir(space-between,center,row);
+            &__socialIcon {
+                border-right: 2px rgb(228, 228, 228) solid;
+                width: 25%;
+                height: 70%;
+                @include flex-center-dir(center,center,row);
+                i {
+                    @include call-font-size(m)
+                }
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                @include call-font-size(ms)
+            }
         }
         .facebook {
             background-color: #507bbf;

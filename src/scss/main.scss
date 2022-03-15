@@ -7,7 +7,7 @@
 
 body {
     background-color: burlywood;
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     // @include flex-center-wrap(center,center,nowrap);
     display: flex;

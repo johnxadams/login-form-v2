@@ -11,3 +11,12 @@
     align-items: $align;
     flex-direction: $dir;
 }
+
+@mixin call-font-size($size-key){
+    @if map-has-key($font-size,$size-key){
+        font-size: map-get($font-size,$size-key);
+    }
+    @else {
+        @error "#{$size-key} is not defined, Please use #{map-keys($font-size)}";
+    }
+}
